@@ -1,0 +1,19 @@
+title Exercise 0.6
+
+
+note over Browser:
+server starts executing event handler
+Get the value from "#note"
+put the value into JSON
+clear the value on "#note"
+renders notes to display
+end note 
+
+Browser->Server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_notes_SPA
+
+
+note over Server:
+browser starts executing js-code
+that update JSON data
+end note
+

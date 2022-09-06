@@ -1,25 +1,12 @@
-title Exercise 0.4
+title Exercise 0.5
 
 
-
-Browser->Server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_notes
-
-
-note over Server:
-server starts executing js-code
-put the new data into json data
-end note over 
-
-Server->Browser: HTTP Redirect https://studies.cs.helsinki.fi/exampleapp/notes
-
-Browser->Server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/notes
+Browser->Server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/spa
 Server-->Browser: HTML-code
-
 Browser->Server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
 Server-->Browser: main.css
-
-Browser->Server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.js
-Server-->Browser: main.js
+Browser->Server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/spa.js
+Server-->Browser: spa.js
 
 note over Browser:
 browser starts executing js-code
@@ -32,4 +19,10 @@ Server-->Browser: [{ content: "HTML is easy", date: "2019-05-23" }, ...]
 note over Browser:
 browser executes the event handler
 that renders notes to display
+end note
+
+note over Browser:
+Executes the event handler
+rewirte button's function,
+which in "notes_form" 
 end note
